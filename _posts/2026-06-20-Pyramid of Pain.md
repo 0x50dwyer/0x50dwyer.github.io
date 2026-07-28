@@ -1,7 +1,7 @@
 ---
 layout: post
 author: Patrick
-description: Splunk Components and usage (eventually)
+description: Climbing the Pyramid of Pain
 ---
 **Hash Values**
 (trivial)
