@@ -30,3 +30,5 @@ Seems similar to the host and network artifacts. Those will point you to the too
 **Tactics, Techniques, and Procedures**
 (Tough)
 At this point everything (or enough things) the attacker uses and how they use it are mapped. The attacker needs to completely change their methods and tools to remain undetected. That takes time and resources. A motivated attacker will probably still take the time. Anyone else will have likely already moved on.
+
+More of an inverted pyramid in this configuration. I should borrow an image from someone or try to make one.
