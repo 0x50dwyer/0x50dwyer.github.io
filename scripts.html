@@ -24,5 +24,14 @@ title: Scripts
             <span class="link-meta">📅 2026</span>
         </a>
 
+        {% for file in site.static_files %}
+            {% if file.path contains '/assets/scripts/PowerShell' %}
+                <a href="{{ file.path | relative_url }}" target="_blank" class="link-item">
+                    <span class="tag">PowerShell</span>
+                    <span>Add an AD Group and User using PowerShell</span>
+                    <span class="link-meta">📅 2026</span>
+                </a>
+            {% endif %}
+        {% endfor %}
     </div>
 </main>
