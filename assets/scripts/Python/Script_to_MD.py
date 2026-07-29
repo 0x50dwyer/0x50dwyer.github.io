@@ -1,6 +1,7 @@
 import argparse
 from pathlib import Path
 from datetime import date
+import html
 
 parser = argparse.ArgumentParser()
 
@@ -18,7 +19,7 @@ outFile = open(f"{filename}.md", "w", encoding="utf-8")
 outFile.write(f"""---\nlayout: default\ntitle: { filename.replace("_", " ") }\ndescription: { args.description }\ndate: { date.today() }\n---\n<pre><code>""")
 with open(filePath, "r", encoding="utf-8") as file:
     for line in file:
-        outFile.write(f"{ line }")
+        outFile.write(f"{ html.escape(line) }")
 outFile.write(f"""</code></pre>""")
 outFile.close()
 file.close()
