@@ -10,19 +10,6 @@ title: Scripts
     </header>
 
     <div class="link-list">
-        
-        <a href="/scripts/PortGuessingGame.py" target="_blank"
-            class="link-item">
-            <span class="tag">Python</span>
-            <span>Simple Python script for playing a Port/Protocol guessing game</span>
-            <span class="link-meta">📅 </span>
-        </a>
-        <a href="/scripts/AddADGroupAndUser.ps1" target="_blank"
-            class="link-item">
-            <span class="tag">PowerShell</span>
-            <span>Add an AD Group and User using PowerShell</span>
-            <span class="link-meta">📅 2026</span>
-        </a>
 
         {% for file in site.static_files %}
             {% if file.path contains '/assets/scripts/PowerShell' %}
@@ -33,5 +20,6 @@ title: Scripts
                 </a>
             {% endif %}
         {% endfor %}
+        
     </div>
 </main>
