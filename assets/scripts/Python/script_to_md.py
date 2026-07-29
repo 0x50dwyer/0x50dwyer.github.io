@@ -1,20 +1,24 @@
-import sys
+import argparse
 from pathlib import Path
-import html
+from datetime import date
 
-if len(sys.argv) < 2:
-    print("Usage: script_to_md.py <filename>")
+parser = argparse.ArgumentParser()
 
+parser.add_argument("-i", "--input",
+                    help="Script input file")
+parser.add_argument("-d", "--description",
+                    help="Short description of the script")
 
-filePath = Path(sys.argv[1])
+args = parser.parse_args()
+
+filePath = Path(args.input)
 filename = filePath.name.split(".")[0]
 
 outFile = open(f"{filename}.md", "w", encoding="utf-8")
-outFile.write(f"""---\nlayout: default\n---\n<pre><code>""")
+outFile.write(f"""---\nlayout: default\ntitle: { filename.replace("_", " ") }\ndescription: { args.description }\ndate: { date.today() }\n---\n<pre><code>""")
 with open(filePath, "r", encoding="utf-8") as file:
     for line in file:
         outFile.write(f"{ line }")
 outFile.write(f"""</code></pre>""")
 outFile.close()
 file.close()
-print("done")

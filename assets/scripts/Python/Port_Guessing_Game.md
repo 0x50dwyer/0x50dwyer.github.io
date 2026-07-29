@@ -1,12 +1,10 @@
 ---
 layout: default
 title: Port Guessing Game
-description: Guessing game based on common Ports/Protocols
-date: 2026-06-16
+description: Python guessing game for common Ports/Protocols
+date: 2026-07-29
 ---
-
-<pre><code>
-import random
+<pre><code>import random
 
 knownPorts = {'22': 'SSH', '23': 'Telnet', '25': 'SMTP', '53': 'DNS', '80': 'HTTP', '443': 'HTTPS', '161': 'SNMP', '3389': 'RDP',
               '110': 'POP', '143': 'IMAP', '389': 'LDAP', '636': 'LDAPS', '123': 'NTP','445': 'SMB', '20': 'FTP Data', '21': 'FTP Control',
@@ -81,5 +79,6 @@ while(True):
         continue
     else:
         break
+        
         
 </code></pre>
