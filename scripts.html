@@ -26,7 +26,7 @@ title: Scripts
 
         {% for file in site.static_files %}
             {% if file.path contains '/assets/scripts/PowerShell' %}
-                <a href="{{ file.path | relative_url }}" target="_blank" class="link-item">
+                <a href="{{ file.path | absolute_url }}" target="_blank" class="link-item">
                     <span class="tag">PowerShell</span>
                     <span>Add an AD Group and User using PowerShell</span>
                     <span class="link-meta">📅 2026</span>
