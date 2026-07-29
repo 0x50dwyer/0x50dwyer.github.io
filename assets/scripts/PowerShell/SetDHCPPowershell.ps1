@@ -1,0 +1,1 @@
+﻿Set-NetIPInterface -InterfaceAlias "Ethernet0" -AddressFamily IPv4 -Dhcp Enabled
