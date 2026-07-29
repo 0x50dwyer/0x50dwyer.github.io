@@ -10,15 +10,28 @@ title: Scripts
     </header>
 
     <div class="link-list">
+        <h2><p>PowerShell</p></h2>
 
-        {% for file in site.static_files %}
-            {% if file.path contains '/assets/scripts/PowerShell' %}
-                <a href="{{ file.path | absolute_url }}" target="_blank" class="link-item">
-                    <span class="tag">{{ file.name }}</span>
-                    <span>Add an AD Group and User using PowerShell</span>
-                    <span class="link-meta">📅 2026</span>
-                </a>
-            {% endif %}
+        {% assign project_pages = site.pages | where_exp: "item", "item.path contains 'assets/scripts/PowerShell'" %}
+        {% for thing in project_pages %}
+            <a href="{{ thing.url }}" class="link-item">
+                <span class="tag">{{ thing.title }}</span>
+                <span>{{ thing.description }}</span>
+                <span class="link-meta">📅 {{ thing.date | date_to_string }}</span>
+            </a>
+        {% endfor %}
+
+    </div>
+    
+    <div class="link-list">
+        <h2><p>Python</p></h2>
+        {% assign project_pages = site.pages | where_exp: "item", "item.path contains 'assets/scripts/Python'" %}
+        {% for thing in project_pages %}
+            <a href="{{ thing.url }}" class="link-item">
+                <span class="tag">{{ thing.title }}</span>
+                <span>{{ thing.description }}</span>
+                <span class="link-meta">📅 {{ thing.date | date_to_string }}</span>
+            </a>
         {% endfor %}
 
     </div>
