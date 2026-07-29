@@ -1,4 +1,6 @@
 ---
+layout: default
+author: Patrick
 ---
 
 ```New-NetIPAddress -AddressFamily IPv4 -InterfaceAlias "Ethernet0" -IPAddress "176.16.160.12" -PrefixLength "24" -DefaultGateway "176.16.160.1"
