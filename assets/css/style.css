@@ -234,7 +234,7 @@ pre code {
 }
 
 
-pre::before {
+/*pre::before {
   content: '';
   position: absolute;
   top: 0; left: 0; right: 0;
@@ -242,7 +242,7 @@ pre::before {
   background: rgba(59, 130, 246, 0.03);
   border-bottom: 1px solid var(--border-subtle);
   border-radius: 8px 8px 0 0;
-}
+}*/
 
 /* ─────────────────────────────────────
    TABLE STYLING
@@ -282,7 +282,6 @@ tbody td {
   vertical-align: top;
 }
 
-/* Subtle row alternation */
 tbody tr:nth-child(even) {
   background: rgba(255, 255, 255, 0.02);
 }
