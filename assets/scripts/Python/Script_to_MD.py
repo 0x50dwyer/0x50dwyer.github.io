@@ -24,11 +24,11 @@ else:
     outFile = open(f"{filename}.md", "w", encoding="utf-8")
 
 if outFile:
-    outFile.write(f"""---\nlayout: default\ntitle: { filename.replace("_", " ") }\ndescription: { args.description }\ndate: { date.today() }\n---\n```""")
+    outFile.write(f"""---\nlayout: default\ntitle: { filename.replace("_", " ") }\ndescription: { args.description }\ndate: { date.today() }\n---\n<pre><code>\n""")
     with open(filePath, "r", encoding="utf-8") as file:
         for line in file:
             outFile.write(f"{ html.escape(line) }")
-    outFile.write(f"""```""")
+    outFile.write(f"""</code></pre>""")
     outFile.close()
     file.close()
 else:
