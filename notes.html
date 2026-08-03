@@ -6,13 +6,12 @@ title: Notes
 <main class="container">
     <header class="page-header">
         <h1>Technical Notes</h1>
-        <p>Click any entry to open the note.</p>
     </header>
 
     <div class="link-list">
          <ul>
          {% for post in site.posts %}
-            <a href="{{ post.url }}" target="_blank" class="link-item">
+            <a href="{{ post.url }}" class="link-item">
                 <span class="tag">{{ post.title }}</span>
                 <span>{{ post.description }}</span>
                 <span class="link-meta">📅 {{ post.date | date_to_string }}</span>
