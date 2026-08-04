@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: script
 title: Add AD Group and User
 description: PowerShell script for adding a new group and user to AD
 date: 2026-07-29

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: script
 title: Set DHCP Powershell
 description: Enable DHCP through PowerShell
 date: 2026-07-29

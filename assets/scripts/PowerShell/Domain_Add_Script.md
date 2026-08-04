@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: script
 title: Domain Add Script
 description: PowerShell script to add a new computer to a domain
 date: 2026-07-29

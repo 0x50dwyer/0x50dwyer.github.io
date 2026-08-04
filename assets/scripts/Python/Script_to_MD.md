@@ -1,8 +1,8 @@
 ---
-layout: default
+layout: script
 title: Script to MD
-description: Format scripts for display on a website
-date: 2026-08-02
+description: Formats scripts for display on the site.
+date: 2026-08-04
 ---
 <pre><code>
 import argparse
@@ -14,7 +14,7 @@ parser = argparse.ArgumentParser()
 
 parser.add_argument(&quot;-i&quot;, &quot;--input&quot;,
                     help=&quot;Script input file&quot;)
-parser.add_argument(&quot;-d&quot;, &quot;--description&quot;,
+parser.add_argument(&quot;-d&quot;, &quot;--description&quot;, default=&quot;TBD&quot;,
                     help=&quot;Short description of the script&quot;)
 parser.add_argument(&quot;-o&quot;, &quot;--output&quot;, required=False,
                     help=&quot;Output directory for the script MD&quot;)
@@ -23,7 +23,6 @@ args = parser.parse_args()
 filePath = Path(args.input)
 filename = filePath.name.split(&quot;.&quot;)[0]
 
-#add something here to handle the post directory once I figure out argparse a bit better.
 if args.output:
     outPath = Path(args.output)
     outFile = open(f&quot;{ outPath }/{filename}.md&quot;, &quot;w&quot;, encoding=&quot;utf-8&quot;)
@@ -31,7 +30,7 @@ else:
     outFile = open(f&quot;{filename}.md&quot;, &quot;w&quot;, encoding=&quot;utf-8&quot;)
 
 if outFile:
-    outFile.write(f&quot;&quot;&quot;---\nlayout: default\ntitle: { filename.replace(&quot;_&quot;, &quot; &quot;) }\ndescription: { args.description }\ndate: { date.today() }\n---\n&lt;pre&gt;&lt;code&gt;\n&quot;&quot;&quot;)
+    outFile.write(f&quot;&quot;&quot;---\nlayout: script\ntitle: { filename.replace(&quot;_&quot;, &quot; &quot;) }\ndescription: { args.description }\ndate: { date.today() }\n---\n&lt;pre&gt;&lt;code&gt;\n&quot;&quot;&quot;)
     with open(filePath, &quot;r&quot;, encoding=&quot;utf-8&quot;) as file:
         for line in file:
             outFile.write(f&quot;{ html.escape(line) }&quot;)

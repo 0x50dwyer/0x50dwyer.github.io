@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: script
 title: IP by Powershell
 description: PowerShell script to set a new IP and DNS
 date: 2026-07-29

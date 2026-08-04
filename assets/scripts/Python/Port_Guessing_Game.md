@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: script
 title: Port Guessing Game
 description: Python guessing game for common Ports/Protocols
 date: 2026-08-02
