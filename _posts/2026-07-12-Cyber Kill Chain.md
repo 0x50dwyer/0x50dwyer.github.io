@@ -2,6 +2,7 @@
 layout: post
 author: Patrick
 description: Breakdown of the Cyber Kill Chain
+title: Cyber Kill Chain
 ---
 **Reconnaissance**
 The research and planning phase against a target. Information gathered here will be used to plan the next phases of the attack. 
@@ -49,7 +50,7 @@ This phase is where the attacker's code executes on the target. With phishing th
 Seems like it could be more accurately described as persistence, this is where the attacker attempts to maintain access to the compromised system. Installing a remote shell, creating or modifying services, creating new accounts are all persistence mechanisms. MITRE ATT&CK lists 22 techniques under persistence. 
 
 **Command & Control**
-After executing the malware and achieving persistence
+After executing the malware and achieving persistence ...
 
 **Actions on Objectives**
 

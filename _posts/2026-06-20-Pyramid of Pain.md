@@ -2,6 +2,7 @@
 layout: post
 author: Patrick
 description: Climbing the Pyramid of Pain
+title: Pyramid of Pain
 ---
 **Hash Values**
 (trivial)

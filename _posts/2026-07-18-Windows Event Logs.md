@@ -2,6 +2,7 @@
 layout: post
 author: Patrick
 description: Common Windows Event Logs for security investigations
+title: Windows Event Logs
 ---
 **Authentication IDs**
 

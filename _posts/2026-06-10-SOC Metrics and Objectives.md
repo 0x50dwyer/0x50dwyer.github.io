@@ -1,7 +1,8 @@
 ---
 layout: post
 author: Patrick
-description: SOC Metrics and Objectives notes
+description: Notes on SOC metrics and objectives.
+title: SOC Metrics and Objectives
 ---
 **Core Metrics**
 

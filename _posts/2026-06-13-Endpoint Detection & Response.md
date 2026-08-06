@@ -1,7 +1,8 @@
 ---
 layout: post
 author: Patrick
-description: Endpoint Detection & Response notes
+description: Notes on EDR components and functions.
+title: Endpoint Detection & Response (EDR)
 ---
 EDR main features are visibility, detection, and response.
 
