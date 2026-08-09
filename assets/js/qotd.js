@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     continue;
                 }
 
-                const quoteEndArray = cleanLine.split('-');
+                const quoteEndArray = cleanLine.split('―');
 
                 if (quoteEndArray != []) {
 
