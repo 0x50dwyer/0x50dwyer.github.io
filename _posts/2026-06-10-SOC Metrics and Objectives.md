@@ -1,8 +1,15 @@
 ---
 layout: post
 author: Patrick
-description: Notes on SOC metrics and objectives.
+description: List of SOC metrics and Objectives.
 title: SOC Metrics and Objectives
+nav_items:
+  - label: "Core Metric"
+    id: "core-metric"
+  - label: "Triage Metrics"
+    id: "triage-metrics"
+  - label: "Improving Metrics"
+    id: "improving-metrics"
 ---
 **Core Metrics**
 

@@ -1,7 +1,7 @@
 // Wait until the browser finishes parsing the HTML DOM tree
 document.addEventListener('DOMContentLoaded', function() {
 
-    const QUOTE_FILE_PATH = 'assets/js/quotes.txt';
+    const QUOTE_FILE_PATH = '/assets/js/quotes.txt';
 
     fetch(QUOTE_FILE_PATH)
 
@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         .then(function(textContent) {
             
-            const rawLines = textContent.split('\n');
+            const rawLines = textContent.split('\r\n\r\n');
 
             const quotesArray = [];
 
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     continue;
                 }
 
-                const quoteEndArray = cleanLine.split('―');
+                const quoteEndArray = cleanLine.split('-');
 
                 if (quoteEndArray != []) {
 

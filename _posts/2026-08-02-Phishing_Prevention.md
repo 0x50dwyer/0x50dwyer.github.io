@@ -3,6 +3,11 @@ layout: post
 author: Patrick
 description: Phishing prevention technologies
 title: Phishing Prevention Technology
+nav_items:
+  - label: "Sender Policy Framework"
+    id: "sender-policy-framework-spf"
+  - label: "DomainKeys Identified Mail"
+    id: "domainkeys-identified-mail-dkim"
 ---
 ## Sender Policy Framework (SPF)
 

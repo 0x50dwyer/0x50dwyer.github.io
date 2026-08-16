@@ -3,8 +3,25 @@ layout: post
 author: Patrick
 description: Common Windows Event Logs for security investigations
 title: Windows Event Logs
+nav_items:
+  - label: "Authentication IDs"
+    id: "authentication-ids"
+  - label: "Kerberos IDs"
+    id: "kerberos-ids"
+  - label: "Account Management IDs"
+    id: "account-management-ids"
+  - label: "Process and Service IDs"
+    id: "process-and-service-ids"
+  - label: "Defense Evasion IDs"
+    id: "defense-evasion-ids"
+  - label: "System Log IDs"
+    id: "system-log-ids"
+  - label: "Sysmon IDs"
+    id: "sysmon-ids"
+  - label: "PowerShell IDs"
+    id: "powershell-ids"
 ---
-**Authentication IDs**
+## Authentication IDs
 
 | Event ID  | Description                                                                                                                          |
 | --------- | ------------------------------------------------------------------------------------------------------------------------------------ |
@@ -15,7 +32,7 @@ title: Windows Event Logs
 | 4634/4647 | Logoff. Correlate with 4624 to determine session length                                                                              |
 
 
-**Kerberos IDs**
+## Kerberos IDs
 
 | Event ID | Description                                                                                                                                                     |
 | -------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -24,7 +41,7 @@ title: Windows Event Logs
 | 4771     | Kerberos pre-auth failed. High volumes indicate brute force against domain accounts.                                                                            |
 
 
-**Account Management IDs**
+## Account Management IDs
 
 | Event ID | Description                                                                  |
 | -------- | ---------------------------------------------------------------------------- |
@@ -36,7 +53,7 @@ title: Windows Event Logs
 | 4756     | Member added to a universal security group. Enterprise Admin, Schema Admin.  |
 
 
-**Process and Service IDs**
+## Process and Service IDs
 
 | Event ID | Description                                                                                                                          |
 | -------- | ------------------------------------------------------------------------------------------------------------------------------------ |
@@ -47,7 +64,7 @@ title: Windows Event Logs
 
 
 
-**Defense Evasion IDs**
+## Defense Evasion IDs
 
 | Event ID | Description              |
 | -------- | ------------------------ |
@@ -55,7 +72,7 @@ title: Windows Event Logs
 | 4719     | Audit policy was changed |
 
 
-**System Log IDs**
+## System Log IDs
 
 | Event ID | Description                                                             |
 | -------- | ----------------------------------------------------------------------- |
@@ -65,7 +82,7 @@ title: Windows Event Logs
 | 104      | Event log cleared (System log)                                          |
 
 
-**Sysmon IDs**
+## Sysmon IDs
 
 | Sysmon ID | Description                                                                                                        |
 | --------- | ------------------------------------------------------------------------------------------------------------------ |
@@ -79,7 +96,7 @@ title: Windows Event Logs
 | 25        | Process tampering. Detects advanced evasion: process hollowing, process herpaderping, and process ghosting. (wild) |
 
 
-**PowerShell IDs**
+## PowerShell IDs
 
 | Event ID | Description                                                                              |
 | -------- | ---------------------------------------------------------------------------------------- |

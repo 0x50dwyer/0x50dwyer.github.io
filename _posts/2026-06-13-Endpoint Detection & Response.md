@@ -3,19 +3,25 @@ layout: post
 author: Patrick
 description: Notes on EDR components and functions.
 title: Endpoint Detection & Response (EDR)
+nav_items:
+  - label: "Visibility"
+    id: "visibility"
+  - label: "Agents"
+    id: "agents"
+  - label: "EDR Console"
+    id: "edr-console"
+  - label: "Detection"
+    id: "detection"
+  - label: "Response"
+    id: "response"
 ---
 EDR main features are visibility, detection, and response.
 
-**Visibility**
+## Visibility
 Data collection including Process modifications, Registry modification, File and Folder modifications, User actions, Network connections.
 
-**Detection**
-Signature-based along with behavior-based detections. Machine learning allows for deviation from baseline behavior. It can detect fileless malware. Allows inputting custom IOCs for threat detection.
 
-**Response**
-Allows for threat response on any endpoint from the central EDR console. 
-
-**Agents**
+## Agents
 Monitor endpoints sending information back to the EDR console. Also known as a sensor.
 
 Telemetry collected includes:
@@ -29,10 +35,10 @@ Telemetry collected includes:
 | Registry Modifications              | Windows registry is a great source of information . Many changes happen during malicious activity which can be tracked.                                                        |
 
 
-**EDR Console**
+## EDR Console
 Centralized point that collects information sent from the EDR agents. Information is correlated and matched with threat intelligence. Once an alert is triggered an analyst can see all the details of the detection including files accessed, processes started, network connections, registry modifications, etc. If determined to be a true positive an analyst can take action through the EDR console. 
 
-**Detection**
+## Detection
 
 | Detection                   | Description                                                                                                                                                                                    |
 | --------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -42,7 +48,7 @@ Centralized point that collects information sent from the EDR agents. Informatio
 | Mitre ATT&CK Mapping        | Activity flagged by the EDR is mapped to the Mitre Tactic and Technique.                                                                                                                       |
 | Machine Learning Algorithms | Machine learning trained on large datasets of malicious behaviors can assist in flagging suspicious activity.                                                                                  |
 
-**Response**
+## Response
 
 | Response             | Description                                                                                                                                                     |
 | -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |

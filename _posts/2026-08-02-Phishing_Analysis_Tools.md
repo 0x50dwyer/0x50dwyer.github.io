@@ -3,6 +3,17 @@ layout: post
 author: Patrick
 description: Phishing analysis tools and processes.
 title: Phishing Analysis
+nav_items:
+  - label: "Header Artifacts"
+    id: "header-artifacts"
+  - label: "Body Analysis"
+    id: "body-analysis"
+  - label: "Email Header Analysis"
+    id: "email-header-analysis"
+  - label: "IP and URL Reputation Analysis"
+    id: "ip-and-url-reputation-analysis"
+  - label: "Malware Sandboxes"
+    id: "malware-sandboxes"
 ---
 
 ## Header Artifacts

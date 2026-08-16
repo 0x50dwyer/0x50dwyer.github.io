@@ -1,37 +1,19 @@
 ---
 layout: default
-title: Home
+title: "Home Page"
 ---
 
 <main class="container">
-    <script src="./assets/js/qotd.js"></script>
-    <section class="hero">
-        <h1>Digital Notebook</h1>
-        <div class="quote-container">
-            <p id="quote-text"></p>
-            <p id="quote-author"></p>
-        </div>
-        
-    </section>
-
-    <section class="quick-links">
-        <h2>Quick Access</h2>
-        <div class="grid">
-            <a href="notes.html" class="card">
-                <div class="card-icon">📝</div>
-                <h3>Technical Notes</h3>
-                <p>Research, tutorials, architecture logs & deep dives</p>
+    <div class="link-list">
+        {% for post in site.posts %}
+            <!-- Removed invalid <ul>/<li> nesting. Clean semantic cards. -->
+            <a href="{{ post.url }}" class="link-item">
+                <div class="link-content">
+                    <span class="tag">{{ post.title }}</span>
+                    <span class="link-desc">{{ post.description }}</span>
+                </div>
+                <span class="link-meta">📅 {{ post.date | date_to_string }}</span>
             </a>
-            <a href="scripts.html" class="card">
-                <div class="card-icon">⚙️</div>
-                <h3>Scripts & Tools</h3>
-                <p>Python, PowerShell, and other random scripts</p>
-            </a>
-            <a href="misc.html" class="card">
-                <div class="card-icon">❔</div>
-                <h3>Random Things</h3>
-                <p>Random assortment of things I found interesting</p>
-            </a>
-        </div>
-    </section>
+        {% endfor %}
+    </div>
 </main>

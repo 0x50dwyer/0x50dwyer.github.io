@@ -1,13 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
     <head>
-        <meta charset="UTF-8">
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>{{ page.title }}</title>
         <link rel="stylesheet" href="/assets/css/style.css">
+        <script src="/assets/js/qotd.js"></script>
+        <title>{{ page.title }}</title>
     </head>
     <body>
-        {% include navigation.html %}
-        {{ content }}
+        {% if page.title == "Home Page" %}
+        <!-- HERO IMAGE -->
+         <img class="hero-image" src="/assets/images/mountain.jpg" alt="Scenic foggy mountainscape">
+         {% endif %}
+
+         {% include navbar.html %}
+
+        <!-- MIDDLE SECTION -->
+        <div class="page-body">
+            {{ content }}
+        </div>
+        {% include footer.html %}
     </body>
 </html>
