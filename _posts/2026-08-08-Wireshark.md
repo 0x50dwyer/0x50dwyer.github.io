@@ -42,8 +42,12 @@ We can also find packets by content. When using Find Packets there are several o
 **Marking Packets**
 Marking packets can make it easier to find specific packets for later analysis. Marked packets will have a black background regardless of other color schemes.
 
+{% include image.html image_src='/assets/images/wireshark_markedpacket.png' alt_text='Wireshark Marked Packet' %}
+
 **Packet Comments**
 Comments can be added to packets to assist with documenting or troubleshooting. 
+
+{% include image.html image_src='/assets/images/wireshark_comment.png' alt_text='Wireshark Setting a Comment' %}
 
 **Export Packets**
 Exporting specific packets from a larger PCAP file.
