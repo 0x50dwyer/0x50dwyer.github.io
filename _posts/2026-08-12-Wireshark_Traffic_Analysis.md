@@ -27,7 +27,7 @@ Extremely popular network mapping tool. It can be used to identify live hosts, o
 ### TCP
 Quick detour for some background on TCP before getting into how the scans work. Per Wikipedia "The Transmission Control Protocol (TCP) is one of the main protocols of the internet protocol suite, providing reliable*, ordered, and error-checked* delivery of a stream of octets (bytes) between applications running on hosts communicating via an IP network." It is cool how it works. TCP is a connection-oriented protocol so before 2 hosts can communicate the connection needs to be established. TCP doesn that with the "three-way handshake". The requesting host sends a SYN request -> the receiving host will send back a SYN/ACK -> the requesting host will then send an ACK to establish the connection. (add image)
 
-![Wireshark TCP Connection](/assets/images/wireshark_tcpconnect.png)
+{% include image.html image_src="/assets/images/wireshark_tcpconnect.png" alt_text="Wireshark TCP Connection Handshake" %}
 
 ### TCP Connect Scans
 TCP Connect scans use the complete three-way handshake when trying a port.

@@ -1,0 +1,31 @@
+<style>
+  #img-hover:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+  }
+</style>
+<img src="{{ include.image_src }}" alt="{{ include.alt_text }}" onclick="openModal('img-modal', '{{ include.image_src }}')" id="img-hover" >
+
+<div id="img-modal" class="modal">
+  <span class="close" onclick="closeModal('img-modal')">&times;</span>
+  <img src="" alt="{{ include.alt_text }}" class="modal-content" width="100%" height="100%">
+</div>
+
+<script>
+function openModal(modalId, modal_image) {
+  let modal = document.getElementById(modalId);
+  modal.style.display = "flex";
+  modal.classList.add("show");
+  let img_src = modal.querySelector("img");
+  img_src.src = modal_image;
+}
+
+function closeModal(modalId) {
+  let modal = document.getElementById(modalId);
+  modal.classList.remove("show");
+  setTimeout(function () {
+    modal.style.display = "none";
+    modal.querySelector(".caption").innerText = "";
+  }, 300);
+}
+</script>

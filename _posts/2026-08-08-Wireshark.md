@@ -28,7 +28,7 @@ Some use cases include:
 Wireshark comes with a fairly easy to navigate GUI interface. 
 On the opening page there are options for choosing either a capture interface or opening a PCAP file (ex. traffic that was captured earlier). Multiple pcap files can be loaded and merged together. Loaded PCAP files (or live captures) show packets with different coloring based on the packet (different colors for different protocols, marked packets, retransmissions)
 
-![Wireshark Landing Page](/assets/images/wireshark_landing.png)
+{% include image.html image_src='/assets/images/wireshark_landing.png' alt_text='Wireshark Landing Page' %}
 
 
 ## Packet Navigation
