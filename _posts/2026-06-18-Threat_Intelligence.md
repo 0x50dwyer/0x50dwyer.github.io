@@ -146,10 +146,11 @@ MalwareBazaar can provide:
 
 Strings and hashes can be useful for identifying a malicious file. But, it doesn't really tell you what it's actually doing. Suspicious files can be run in a sandbox environment (not always) to determine its full functionality. 
 
-- [Hybrid Analysis](https://hybrid-analysis.com/): Hybrid Analysis is a free, public malware analysis portal. It safely runs suspicious files and URLs in isolated virtual sandbox environments across various operating systems to record real-time behavior, extract indicators of compromise (IOCs), and generate detailed threat reports.
-- [Joe Sandbox](https://www.joesandbox.com/): Joe Sandbox is a deep malware analysis and threat detection platform. It safely detonates suspicious files, URLs, emails, and packages in a controlled virtual environment to observe their behavior, identify security threats, and generate detailed intelligence reports for cybersecurity professionals.
+[Hybrid Analysis](https://hybrid-analysis.com/): Hybrid Analysis is a free, public malware analysis portal. It safely runs suspicious files and URLs in isolated virtual sandbox environments across various operating systems to record real-time behavior, extract indicators of compromise (IOCs), and generate detailed threat reports.
 
-Considerations for sandbox analysis:
+[Joe Sandbox](https://www.joesandbox.com/): Joe Sandbox is a deep malware analysis and threat detection platform. It safely detonates suspicious files, URLs, emails, and packages in a controlled virtual environment to observe their behavior, identify security threats, and generate detailed intelligence reports for cybersecurity professionals.
+
+**Considerations for sandbox analysis:**
 
 - Sandbox Evasions: Malware can be designed to check its environment for indicators that it is running in a virtual environment and stop exectution.
 - Limited execution time: Sandboxes usually terminate analysis after a few minutes so multistage malware may not fully execute.
