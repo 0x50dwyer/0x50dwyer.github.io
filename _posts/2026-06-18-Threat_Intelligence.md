@@ -150,6 +150,7 @@ Strings and hashes can be useful for identifying a malicious file. But, it doesn
 - [Joe Sandbox](https://www.joesandbox.com/): Joe Sandbox is a deep malware analysis and threat detection platform. It safely detonates suspicious files, URLs, emails, and packages in a controlled virtual environment to observe their behavior, identify security threats, and generate detailed intelligence reports for cybersecurity professionals.
 
 Considerations for sandbox analysis:
+
 - Sandbox Evasions: Malware can be designed to check its environment for indicators that it is running in a virtual environment and stop exectution.
 - Limited execution time: Sandboxes usually terminate analysis after a few minutes so multistage malware may not fully execute.
 - Encrypted & Obfuscated traffic: Many sandboxes cannot decrypt TLS traffic. 
